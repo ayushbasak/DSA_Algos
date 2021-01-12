@@ -3,3 +3,6 @@ Arrays/NextPermutation.cpp
 *.exe
 *.xlsx#
 .vscode
+Stacks-Queues/QueueImplementation.cpp
+Misc
+Searching-Sorting/FirstLastPos.cpp

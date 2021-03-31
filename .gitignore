@@ -4,5 +4,6 @@ Arrays/NextPermutation.cpp
 *.xlsx#
 .vscode
 Stacks-Queues/QueueImplementation.cpp
-Misc
+Misc/SieveOfEratosthenes.cpp
 Searching-Sorting/FirstLastPos.cpp
+Arrays2d/MatrixMultiplication.cpp

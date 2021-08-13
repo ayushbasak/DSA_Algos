@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+
 int main(){
 	string x, y;
 	cin >> x >> y;
@@ -14,37 +16,18 @@ int main(){
 			if(!i or !j)
 				dp[i][j] = 0;
 
+	int maxResult = 0;
 	for(int i=1; i<=len1; i++){
 		for(int j =1; j<=len2; j++){
-			if(x[i -1] == y[j - 1])
+			if(x[i -1] == y[j - 1]){
 				dp[i][j] = 1 + dp[i-1][j-1];
+				maxResult = max(maxResult, dp[i][j]);
+			}
 			else{
-				int c1 = dp[i-1][j];
-				int c2 = dp[i][j-1];
-
-				dp[i][j] = max(c1, c2);
+				dp[i][j] = 0;
 			}
 		}
 	}
-
-
-	//Printing
-	int i = len1, j = len2;
-	string temp = "";
-	while(i >=0 and j >= 0){
-		if(x[i - 1] == y[j - 1]){
-			temp = x[i - 1] + temp;
-			i--; j--;
-		}
-		else{
-			if(dp[i-1][j] >= dp[i][j-1])
-				i--;
-			else
-				j--;
-		}
-	}
-
-	cout << dp[len1][len2] << endl;
-	cout << temp << endl;
+	cout << maxResult << endl;
 	return 0;
 }

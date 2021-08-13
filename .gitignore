@@ -3,7 +3,13 @@ Arrays/NextPermutation.cpp
 *.exe
 *.xlsx#
 .vscode
+*.out
 Stacks-Queues/QueueImplementation.cpp
 Searching-Sorting/FirstLastPos.cpp
 Arrays2d/MatrixMultiplication.cpp
+Backtracking
 *.txt
+DynamicProgramming/RecursiveMultiply.cpp
+DynamicProgramming/TrippleStep.cpp
+Recursion
+Stacks-Queues/CloneStack.cpp
